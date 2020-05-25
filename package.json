@@ -2,6 +2,7 @@
 	"name": "@ctx-core/error",
 	"version": "5.1.76",
 	"description": "ctx-core error",
+	"type": "module",
 	"main": "lib.js",
 	"module": "lib.js",
 	"types": "lib.ts",
