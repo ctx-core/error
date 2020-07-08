@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "5.1.83",
+	"version": "5.1.84",
 	"description": "ctx-core error",
 	"main": "index.js",
 	"module": "index.js",
@@ -30,8 +30,8 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@ctx-core/logger": "^3.1.18",
-		"@ctx-core/object": "^8.1.0"
+		"@ctx-core/logger": "^3.1.19",
+		"@ctx-core/object": "^8.1.1"
 	},
 	"devDependencies": {
 		"typescript": "^3.9.6"
