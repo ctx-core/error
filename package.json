@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "5.1.105",
+	"version": "5.1.106",
 	"description": "ctx-core error",
 	"main": "./index.js",
 	"module": "./index.js",
