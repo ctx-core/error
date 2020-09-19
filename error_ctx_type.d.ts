@@ -6,6 +6,7 @@ export declare type base_error_ctx_type = {
     error_message?: string;
     stack?: string;
     upstream_error?: error_ctx_type;
+    data?: object;
 };
 declare type keys_base_error_ctx_type = keyof base_error_ctx_type;
 export declare type error_ctx_type = base_error_ctx_type & {

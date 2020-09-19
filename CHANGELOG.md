@@ -1,5 +1,16 @@
 # @ctx-core/error
 
+## 7.0.0
+
+### Major Changes
+
+- Typescript strict checking
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@12.0.0
+
 ## 6.0.1
 
 ### Patch Changes
