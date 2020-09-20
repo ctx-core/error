@@ -1,39 +1,38 @@
 {
-  "name": "@ctx-core/error",
-  "version": "7.0.0",
-  "description": "ctx-core error",
-  "keywords": [
-    "ctx-core",
-    "error"
-  ],
-  "homepage": "https://github.com/ctx-core/error#readme",
-  "bugs": {
-    "url": "https://github.com/ctx-core/error/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ctx-core/error/issues"
-  },
-  "license": "Apache-2.0",
-  "author": "Brian Takita",
-  "main": "./index.js",
-  "module": "./index.js",
-  "types": "./index.ts",
-  "scripts": {
-    "build": "npm run clean && npm run compile",
-    "clean": "rm -f tsconfig.tsbuildinfo",
-    "compile": "./node_modules/.bin/tsc -b",
-    "exec": "$@",
-    "prepublishOnly": "npm run compile"
-  },
-  "dependencies": {
-    "@ctx-core/object": "workspace:*"
-  },
-  "devDependencies": {
-    "typescript": "^4.0.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "9570e8624385d6e54bb8444edff9b67dc45a8031"
+	"name": "@ctx-core/error",
+	"version": "7.0.0",
+	"description": "ctx-core error",
+	"keywords": [
+		"ctx-core",
+		"error"
+	],
+	"homepage": "https://github.com/ctx-core/error#readme",
+	"bugs": {
+		"url": "https://github.com/ctx-core/error/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ctx-core/error/issues"
+	},
+	"license": "Apache-2.0",
+	"author": "Brian Takita",
+	"main": "./index.js",
+	"module": "./index.js",
+	"types": "./index.ts",
+	"scripts": {
+		"build": "npm run clean && npm run compile",
+		"clean": "rm -f tsconfig.tsbuildinfo",
+		"compile": "./node_modules/.bin/tsc -b",
+		"exec": "$@",
+		"prepublishOnly": "npm run compile"
+	},
+	"dependencies": {
+		"@ctx-core/object": "workspace:*"
+	},
+	"devDependencies": {
+		"typescript": "^4.0.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
