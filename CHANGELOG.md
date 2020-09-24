@@ -1,5 +1,12 @@
 # @ctx-core/error
 
+## 7.0.8
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@12.0.8
+
 ## 7.0.7
 
 ### Patch Changes
