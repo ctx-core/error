@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 7.0.15
+
+### Patch Changes
+
+- typescript: ^4.0.3 -> ^4.0.5
+- Updated dependencies [undefined]
+  - @ctx-core/object@13.0.1
+
 ## 7.0.14
 
 ### Patch Changes
