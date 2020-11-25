@@ -17,6 +17,3 @@ export function throw_missing_argument(...error_ctx_a1:error_ctx_type[]) {
 		error_ctx) as error_ctx_type)
 }
 export const throw__missing_argument = throw_missing_argument
-// export type throw_missing_argument_ctx_type = error_ctx_type&{
-// 	key?:string
-// }

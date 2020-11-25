@@ -1,4 +1,4 @@
-export declare type base_error_ctx_type = {
+export interface base_error_ctx_type {
     type?: string;
     key?: string;
     http_error_message?: string;
@@ -7,7 +7,7 @@ export declare type base_error_ctx_type = {
     stack?: string;
     upstream_error?: error_ctx_type;
     data?: object;
-};
+}
 declare type keys_base_error_ctx_type = keyof base_error_ctx_type;
 export declare type error_ctx_type = base_error_ctx_type & {
     [key in keyof keys_base_error_ctx_type]: string | number | error_ctx_type;

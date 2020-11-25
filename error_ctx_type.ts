@@ -1,4 +1,4 @@
-export type base_error_ctx_type = {
+export interface base_error_ctx_type {
 	type?:string
 	key?:string
 	http_error_message?:string

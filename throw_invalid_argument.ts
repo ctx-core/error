@@ -18,6 +18,8 @@ export function throw_invalid_argument(...error_ctx_a1:throw_invalid_argument_ct
 	) as throw_invalid_argument_ctx_type)
 }
 export const throw__invalid_argument = throw_invalid_argument
-export type throw_invalid_argument_ctx_type = error_ctx_type&{
+export interface throw_invalid_argument_ctx_interface {
 	key?:string
 }
+export type throw_invalid_argument_ctx_type = error_ctx_type
+	&throw_invalid_argument_ctx_interface
