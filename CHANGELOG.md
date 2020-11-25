@@ -1,5 +1,16 @@
 # @ctx-core/error
 
+## 7.1.0
+
+### Minor Changes
+
+- interface instead of type
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@13.1.0
+
 ## 7.0.17
 
 ### Patch Changes
