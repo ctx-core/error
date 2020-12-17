@@ -1,5 +1,14 @@
 # @ctx-core/error
 
+## 7.1.6
+
+### Patch Changes
+
+- interface instead of type:error_ctx_type,throw_invalid_argument_ctx_type,throw_invalid_state_ctx_type
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/object@15.0.4
+
 ## 7.1.5
 
 ### Patch Changes
