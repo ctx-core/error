@@ -8,8 +8,5 @@ export interface base_error_ctx_type {
     upstream_error?: error_ctx_type;
     data?: object;
 }
-declare type keys_base_error_ctx_type = keyof base_error_ctx_type;
-export declare type error_ctx_type = base_error_ctx_type & {
-    [key in keyof keys_base_error_ctx_type]: string | number | error_ctx_type;
-};
-export {};
+export interface error_ctx_type extends base_error_ctx_type {
+}

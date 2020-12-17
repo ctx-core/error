@@ -5,8 +5,7 @@ import type { error_ctx_type } from './error_ctx_type';
  * throw_invalid_argument({key: 'ctx.foobar'}) // ctx.foobar is invalid
  */
 export declare function throw_invalid_argument(...error_ctx_a1: throw_invalid_argument_ctx_type[]): void;
-export declare const throw__invalid_argument: typeof throw_invalid_argument;
-export interface throw_invalid_argument_ctx_interface {
+export interface throw_invalid_argument_ctx_type extends error_ctx_type {
     key?: string;
 }
-export declare type throw_invalid_argument_ctx_type = error_ctx_type & throw_invalid_argument_ctx_interface;
+export { throw_invalid_argument as throw__invalid_argument };

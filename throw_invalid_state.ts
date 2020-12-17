@@ -18,11 +18,10 @@ export function throw_invalid_state(...error_ctx_a1:throw_invalid_state_ctx_type
 		error_ctx as throw_invalid_state_ctx_type
 	) as throw_invalid_state_ctx_type)
 }
-export const throw__invalid_state = throw_invalid_state
-export interface throw_invalid_state_ctx_interface {
+export interface throw_invalid_state_ctx_type extends error_ctx_type {
 	key?:string
 	reason?:string
 }
-export type throw_invalid_state_ctx_type =
-	error_ctx_type
-	&throw_invalid_state_ctx_interface
+export {
+	throw_invalid_state as throw__invalid_state
+}
