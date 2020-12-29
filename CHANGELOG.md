@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 7.1.13
+
+### Patch Changes
+
+- @ctx-core/object@15.0.11
+
 ## 7.1.12
 
 ### Patch Changes
