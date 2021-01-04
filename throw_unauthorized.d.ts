@@ -5,4 +5,4 @@ import type { error_ctx_type } from './error_ctx_type';
  * throw__unauthorized(ctx) // Unauthorized
  */
 export declare function throw_unauthorized(...error_ctx_a1: error_ctx_type[]): void;
-export declare const throw__unauthorized: typeof throw_unauthorized;
+export { throw_unauthorized as throw__unauthorized };

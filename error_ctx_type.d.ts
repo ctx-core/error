@@ -1,4 +1,4 @@
-export interface base_error_ctx_type {
+export interface error_ctx_type {
     type?: string;
     key?: string;
     http_error_message?: string;
@@ -7,6 +7,4 @@ export interface base_error_ctx_type {
     stack?: string;
     upstream_error?: error_ctx_type;
     data?: object;
-}
-export interface error_ctx_type extends base_error_ctx_type {
 }

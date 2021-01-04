@@ -16,4 +16,6 @@ export function throw_unauthorized(...error_ctx_a1:error_ctx_type[]) {
 		...error_ctx_a1 as error_ctx_type[]
 	) as error_ctx_type)
 }
-export const throw__unauthorized = throw_unauthorized
+export {
+	throw_unauthorized as throw__unauthorized
+}
