@@ -1,8 +1,8 @@
-import type { error_ctx_type } from './error_ctx_type'
+import type { error_ctx_T } from './error_ctx_T'
 /**
  * Logs the given error_ctx to stderr
  */
-export function console_error(error_ctx: error_ctx_type) {
+export function console_error(error_ctx:error_ctx_T):void {
 	const out_error_message =
 		error_ctx.error_message
 		|| error_ctx && error_ctx.toString()
@@ -15,4 +15,6 @@ ${out_error_message}
 ${JSON.stringify(error_ctx)}
 	`.trim())
 }
-export const console__error = console_error
+export {
+	console_error as console__error
+}
