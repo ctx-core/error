@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 8.0.21
+
+### Patch Changes
+
+- version bump
+- Updated dependencies [undefined]
+  - @ctx-core/object@17.4.3
+
 ## 8.0.20
 
 ### Patch Changes
