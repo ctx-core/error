@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 8.0.33
+
+### Patch Changes
+
+- update dependencies
+
 ## 8.0.32
 
 ### Patch Changes
