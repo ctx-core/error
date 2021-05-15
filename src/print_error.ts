@@ -1,8 +1,8 @@
-import type { error_ctx_T } from './error_ctx_T'
+import type { error_ctx_I } from './error_ctx_I'
 /**
  * Prints the given `error_ctx` to stderr
  */
-export function print_error(error_ctx: error_ctx_T):void {
+export function print_error(error_ctx: error_ctx_I):void {
 	const { http_error_message = 'Error' } = error_ctx
 	const body = JSON.stringify({ error_message: http_error_message })
 	console.error(`

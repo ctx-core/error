@@ -1,5 +1,16 @@
 # @ctx-core/error
 
+## 8.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@17.6.0
+
 ## 8.0.37
 
 ### Patch Changes

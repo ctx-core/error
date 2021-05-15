@@ -1,8 +1,8 @@
-import type { error_ctx_T } from './error_ctx_T'
+import type { error_ctx_I } from './error_ctx_I'
 /**
  * Logs the given error_ctx to stderr
  */
-export function console_error(error_ctx:error_ctx_T):void {
+export function console_error(error_ctx:error_ctx_I):void {
 	const out_error_message =
 		error_ctx.error_message
 		|| error_ctx && error_ctx.toString()
