@@ -1,5 +1,5 @@
 import { assign, clone } from '@ctx-core/object'
-import type { error_ctx_I } from './error_ctx_I'
+import type { error_Ctx } from './error_Ctx'
 import { throw_error } from './throw_error'
 /**
  * Throws a invalid_state error (HTTP 500)
@@ -18,7 +18,7 @@ export function throw_invalid_state(...error_ctx_a1:throw_invalid_state_ctx_type
 		error_ctx as throw_invalid_state_ctx_type
 	) as throw_invalid_state_ctx_type)
 }
-export interface throw_invalid_state_ctx_type extends error_ctx_I {
+export interface throw_invalid_state_ctx_type extends error_Ctx {
 	key?:string
 	reason?:string
 }
