@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 8.2.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+- Updated dependencies [undefined]
+  - @ctx-core/object@18.1.1
+
 ## 8.2.0
 
 ### Minor Changes
