@@ -4,7 +4,7 @@ import type { error_Ctx } from './error_Ctx'
 /**
  * Logs to stderr & returns a ctx__error.
  */
-export function _log_error_ctx(error_ctx_or_error_message: error_Ctx|string):error_Ctx {
+export function _log_error_ctx(error_ctx_or_error_message:error_Ctx|string):error_Ctx {
 	const error_ctx = _error_ctx(error_ctx_or_error_message)
 	console_error(error_ctx)
 	return error_ctx
