@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "8.1.10",
+	"version": "8.1.11",
 	"description": "ctx-core error",
 	"keywords": [
 		"ctx-core",
@@ -18,7 +18,7 @@
 	"author": "Brian Takita",
 	"main": "./src/index.js",
 	"module": "./src/index.js",
-	"types": "./src/index.ts",
+	"types": "./src/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
@@ -27,7 +27,7 @@
 		"prepublishOnly": "npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/object": "workspace:^18.0.5"
+		"@ctx-core/object": "workspace:^18.0.6"
 	},
 	"devDependencies": {
 		"typescript": "^4.2.4"
