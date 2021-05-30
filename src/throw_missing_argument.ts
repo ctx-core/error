@@ -6,8 +6,8 @@ import type { error_ctx_I } from './error_ctx_I'
  * @example
  * throw_missing_argument({key: 'ctx.foobar', type: 'baz__agent'}) // ctx.foobar is not defined - baz__agent
  */
-export function throw_missing_argument(...error_ctx_a1:error_ctx_I[]):void {
-	const error_ctx = clone(...error_ctx_a1 as error_ctx_I[]) as error_ctx_I
+export function throw_missing_argument(...error_ctx_a:error_ctx_I[]):void {
+	const error_ctx = clone(...error_ctx_a as error_ctx_I[]) as error_ctx_I
 	throw_error(assign({
 			type: 'missing_argument',
 			http_status: 500,

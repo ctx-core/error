@@ -6,8 +6,8 @@ import { throw_error } from './throw_error'
  * @example
  * throw_invalid_argument({key: 'ctx.foobar'}) // ctx.foobar is invalid
  */
-export function throw_invalid_argument(...error_ctx_a1:throw_invalid_argument_ctx_T[]):void {
-	const error_ctx = clone(...error_ctx_a1) as throw_invalid_argument_ctx_T
+export function throw_invalid_argument(...error_ctx_a:throw_invalid_argument_ctx_T[]):void {
+	const error_ctx = clone(...error_ctx_a) as throw_invalid_argument_ctx_T
 	throw_error(assign({
 			type: 'invalid_argument',
 			http_status: 500,

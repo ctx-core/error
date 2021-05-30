@@ -6,14 +6,14 @@ import { throw_error } from './throw_error'
  * @example
  * throw__bad_gateway(ctx) // Bad Gateway
  */
-export function throw_bad_gateway(...error_ctx_a1:error_ctx_I[]):void {
+export function throw_bad_gateway(...error_ctx_a:error_ctx_I[]):void {
 	throw_error(assign({
 			type: 'bad_gateway',
 			http_status: 502,
 			error_message: 'Bad Gateway',
 			http_error_message: 'Bad Gateway',
 		} as error_ctx_I,
-		...error_ctx_a1 as error_ctx_I[]
+		...error_ctx_a as error_ctx_I[]
 	) as error_ctx_I)
 }
 export {

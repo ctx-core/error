@@ -6,14 +6,14 @@ import { throw_error } from './throw_error'
  * @example
  * throw__bad_credentials(ctx) // Unauthorized
  */
-export function throw_bad_credentials(...error_ctx_a1:error_ctx_I[]):void {
+export function throw_bad_credentials(...error_ctx_a:error_ctx_I[]):void {
 	throw_error(assign({
 			type: 'bad_credentials',
 			http_status: 401,
 			error_message: 'Unauthorized',
 			http_error_message: 'Unauthorized',
 		} as error_ctx_I,
-		...error_ctx_a1 as error_ctx_I[]
+		...error_ctx_a as error_ctx_I[]
 	) as error_ctx_I)
 }
 export {

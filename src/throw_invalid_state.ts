@@ -6,8 +6,8 @@ import { throw_error } from './throw_error'
  * @example
  * throw_invalid_state({key: 'ctx.foobar'}) // ctx.foobar is in an invalid state
  */
-export function throw_invalid_state(...error_ctx_a1:throw_invalid_state_ctx_type[]):void {
-	const error_ctx = clone(...error_ctx_a1) as throw_invalid_state_ctx_type
+export function throw_invalid_state(...error_ctx_a:throw_invalid_state_ctx_type[]):void {
+	const error_ctx = clone(...error_ctx_a) as throw_invalid_state_ctx_type
 	const reason = error_ctx.reason || 'No reason given.'
 	throw_error(assign({
 			type: 'invalid_state',

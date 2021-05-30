@@ -1,5 +1,18 @@
 # @ctx-core/error
 
+## 9.0.0
+
+### Major Changes
+
+- \$ suffix for stores
+- \_ suffix for factory functions
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+- Updated dependencies [undefined]
+  - @ctx-core/object@19.0.0
+
 ## 8.3.1
 
 ### Patch Changes
