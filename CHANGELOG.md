@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 10.0.4
+
+### Patch Changes
+
+- npm run prepare instead of npm run prepublishOnly
+- Updated dependencies [undefined]
+  - @ctx-core/object@20.0.5
+
 ## 10.0.3
 
 ### Patch Changes
