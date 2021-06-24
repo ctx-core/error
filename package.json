@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "10.1.0",
+	"version": "10.1.1",
 	"description": "ctx-core error",
 	"keywords": [
 		"ctx-core",
@@ -27,7 +27,7 @@
 		"prepublishOnly": "npm run clean && npm run compile"
 	},
 	"dependencies": {
-		"@ctx-core/object": "workspace:^20.1.0"
+		"@ctx-core/object": "workspace:^20.1.1"
 	},
 	"devDependencies": {
 		"typescript": "^4.3.4"

@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 10.1.1
+
+### Patch Changes
+
+- tsconfig.json: "lib": ["dom", "ESNext"]
+- Updated dependencies [undefined]
+  - @ctx-core/object@20.1.1
+
 ## 10.1.0
 
 ### Minor Changes
