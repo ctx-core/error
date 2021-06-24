@@ -1,5 +1,5 @@
 export * from './error_ctx_';
-export * from './_log_error_ctx';
+export * from './log_error_ctx_';
 export * from './console_error';
 export * from './error_ctx_I';
 export * from './print_error';

@@ -1,5 +1,16 @@
 # @ctx-core/error
 
+## 10.1.0
+
+### Minor Changes
+
+- _log_error_ctx->log_error_ctx_
+
+### Patch Changes
+
+- Updated dependencies [undefined]
+  - @ctx-core/object@20.1.0
+
 ## 10.0.7
 
 ### Patch Changes
