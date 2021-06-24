@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 10.1.3
+
+### Patch Changes
+
+- update dependencies
+
 ## 10.1.2
 
 ### Patch Changes
