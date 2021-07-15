@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.0.3
+
+### Patch Changes
+
+- fix: module imports;types
+
 ## 11.0.2
 
 ### Patch Changes

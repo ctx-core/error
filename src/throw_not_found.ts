@@ -6,7 +6,7 @@ import type { error_ctx_I } from './error_ctx_I.js'
  * @example
  * throw_not_found(error_ctx) // Not Found
  */
-export function throw_not_found(...error_ctx_a:error_ctx_I[]) {
+export function throw_not_found(...error_ctx_a:error_ctx_I[]):void {
 	throw_error(assign({
 		type: 'not_found',
 		http_status: 404,
