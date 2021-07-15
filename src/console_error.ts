@@ -1,4 +1,4 @@
-import type { error_ctx_I } from './error_ctx_I'
+import type { error_ctx_I } from './error_ctx_I.js'
 /**
  * Logs the given error_ctx to stderr
  */

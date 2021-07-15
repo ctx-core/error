@@ -1,6 +1,6 @@
-import { console_error } from './console_error'
-import { error_ctx_ } from './error_ctx_'
-import type { error_ctx_I } from './error_ctx_I'
+import { console_error } from './console_error.js'
+import { error_ctx_ } from './error_ctx_.js'
+import type { error_ctx_I } from './error_ctx_I.js'
 /**
  * Logs to stderr & returns a ctx__error.
  */

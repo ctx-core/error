@@ -1,6 +1,6 @@
 import { assign } from '@ctx-core/object'
-import type { error_ctx_I } from './error_ctx_I'
-import { throw_error } from './throw_error'
+import type { error_ctx_I } from './error_ctx_I.js'
+import { throw_error } from './throw_error.js'
 /**
  * Throws a bad_gateway error (HTTP 502)
  * @example

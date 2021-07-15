@@ -1,6 +1,6 @@
 import { assign, clone } from '@ctx-core/object'
-import { throw_error } from './throw_error'
-import type { error_ctx_I } from './error_ctx_I'
+import { throw_error } from './throw_error.js'
+import type { error_ctx_I } from './error_ctx_I.js'
 /**
  * Throws a missing_argument error (HTTP 500)
  * @example

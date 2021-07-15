@@ -1,5 +1,5 @@
-import type { error_ctx_I } from './error_ctx_I'
-import { log_error_ctx_ } from './log_error_ctx_'
+import type { error_ctx_I } from './error_ctx_I.js'
+import { log_error_ctx_ } from './log_error_ctx_.js'
 /**
  * Throws an error
  * @throws Decorate & throw error given by the arguments.
