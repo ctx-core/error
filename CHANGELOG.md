@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.0.9
+
+### Patch Changes
+
+- fix: cjs: load as a Promise
+- Updated dependencies [undefined]
+  - @ctx-core/object@21.0.8
+
 ## 11.0.8
 
 ### Patch Changes
