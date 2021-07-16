@@ -1,5 +1,21 @@
 # @ctx-core/error
 
+## 11.0.6
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/object@21.0.5
+
+## 11.0.5
+
+### Patch Changes
+
+- back to esm module with cjs using esm npm package to load library
+- Updated dependencies [undefined]
+  - @ctx-core/object@21.0.4
+
 ## 11.0.4
 
 ### Patch Changes
