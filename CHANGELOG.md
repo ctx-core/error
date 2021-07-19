@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.0.12
+
+### Patch Changes
+
+- exports: + "package.json": "./package.json"
+- Updated dependencies [undefined]
+  - @ctx-core/object@21.0.11
+
 ## 11.0.11
 
 ### Patch Changes
