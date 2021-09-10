@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.0.16
+
+### Patch Changes
+
+- typescript: ^4.4.2 -> ^4.4.3
+- Updated dependencies [undefined]
+  - @ctx-core/object@21.0.18
+
 ## 11.0.15
 
 ### Patch Changes
