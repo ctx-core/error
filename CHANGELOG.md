@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.0.18
+
+### Patch Changes
+
+- compile using swc
+- Updated dependencies
+  - @ctx-core/object@21.0.22
+
 ## 11.0.17
 
 ### Patch Changes
