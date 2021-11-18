@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.1.1
+
+### Patch Changes
+
+- fix: bad*gateway_error*,bad*request_error*
+
 ## 11.1.0
 
 ### Minor Changes

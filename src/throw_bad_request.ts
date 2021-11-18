@@ -7,9 +7,9 @@ import { throw_error } from './throw_error.js'
  * throw_bad_request(ctx) // Bad Request
  */
 export function throw_bad_request(...error_ctx_a:error_ctx_I[]):void {
-	throw_error(bad_request_(clone(...error_ctx_a)))
+	throw_error(bad_request_error_(clone(...error_ctx_a)))
 }
-export function bad_request_(error_ctx:error_ctx_I = {}) {
+export function bad_request_error_(error_ctx:error_ctx_I = {}) {
 	return new BadRequestError(error_ctx)
 }
 export class BadRequestError extends Error implements error_ctx_I {

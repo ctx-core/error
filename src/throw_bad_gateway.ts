@@ -7,9 +7,9 @@ import { throw_error } from './throw_error.js'
  * throw__bad_gateway(ctx) // Bad Gateway
  */
 export function throw_bad_gateway(...error_ctx_a:error_ctx_I[]):void {
-	throw_error(bad_gateway_(clone(...error_ctx_a)))
+	throw_error(bad_gateway_error_(clone(...error_ctx_a)))
 }
-export function bad_gateway_(error_ctx:error_ctx_I = {}) {
+export function bad_gateway_error_(error_ctx:error_ctx_I = {}) {
 	return new BadGatewayError(error_ctx)
 }
 export class BadGatewayError extends Error implements error_ctx_I {
