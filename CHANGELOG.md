@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.1.0
+
+### Minor Changes
+
+- - bad*credentials_error*,BadCredentialsError,bad*gateway*,BadGatewayError,bad*request*,BadRequestError,invalid*argument_error*,InvalidArgumentError,InvalidArgumentError*I,invalid_state_error*,InvalidStateError,InvalidStateError*I,missing_argument_error*,MissingArgumentError,MissingArgumentError*I,not_found_error*,NotFoundError,unauthorized*error*,UnauthorizedError
+
 ## 11.0.20
 
 ### Patch Changes
