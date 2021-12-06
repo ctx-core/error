@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "11.1.5",
+	"version": "11.1.6",
 	"description": "ctx-core error",
 	"keywords": [
 		"ctx-core",
@@ -35,11 +35,11 @@
 		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"dependencies": {
-		"@ctx-core/object": "workspace:^21.0.28"
+		"@ctx-core/object": "workspace:^21.0.29"
 	},
 	"devDependencies": {
 		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.117",
+		"@swc/core": "^1.2.118",
 		"typescript": "next"
 	},
 	"publishConfig": {

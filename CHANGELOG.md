@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.6
+
+### Patch Changes
+
+- @swc/core: ^1.2.117 -> ^1.2.118
+- Updated dependencies
+  - @ctx-core/object@21.0.29
+
 ## 11.1.5
 
 ### Patch Changes
