@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.1.8
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+
 ## 11.1.7
 
 ### Patch Changes
