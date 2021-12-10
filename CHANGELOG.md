@@ -1,5 +1,14 @@
 # @ctx-core/error
 
+## 11.1.9
+
+### Patch Changes
+
+- package.json: - module
+- Updated dependencies
+- Updated dependencies
+  - @ctx-core/object@22.0.0
+
 ## 11.1.8
 
 ### Patch Changes
