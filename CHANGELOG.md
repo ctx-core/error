@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.12
+
+### Patch Changes
+
+- fix: tsconfig.json: "rootDir": "."
+- Updated dependencies
+  - @ctx-core/object@22.0.3
+
 ## 11.1.11
 
 ### Patch Changes
