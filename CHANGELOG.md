@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.13
+
+### Patch Changes
+
+- \*.d.ts export
+- Updated dependencies
+  - @ctx-core/object@22.0.4
+
 ## 11.1.12
 
 ### Patch Changes
