@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.15
+
+### Patch Changes
+
+- package.json: "types": "./src/index.ts": better editing experience
+- Updated dependencies
+  - @ctx-core/object@22.0.6
+
 ## 11.1.14
 
 ### Patch Changes
