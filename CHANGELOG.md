@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.14
+
+### Patch Changes
+
+- fix: build
+- Updated dependencies
+  - @ctx-core/object@22.0.5
+
 ## 11.1.13
 
 ### Patch Changes
