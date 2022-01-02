@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.1.18
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 11.1.17
 
 ### Patch Changes
