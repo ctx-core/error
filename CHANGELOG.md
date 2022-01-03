@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.1.20
+
+### Patch Changes
+
+- fix: import error
+
 ## 11.1.19
 
 ### Patch Changes
