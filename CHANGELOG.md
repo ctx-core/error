@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.22
+
+### Patch Changes
+
+- uvu: ^0.5.2 -> ^0.5.3
+- Updated dependencies
+  - @ctx-core/object@22.0.11
+
 ## 11.1.21
 
 ### Patch Changes
