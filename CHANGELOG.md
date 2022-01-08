@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.1.23
+
+### Patch Changes
+
+- sideEffects = false
+- Updated dependencies
+  - @ctx-core/object@22.0.12
+
 ## 11.1.22
 
 ### Patch Changes
