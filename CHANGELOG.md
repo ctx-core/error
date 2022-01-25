@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.3.0
+
+### Minor Changes
+
+- feat: error_ctx_I,HttpError: + url?: string
+
 ## 11.2.0
 
 ### Minor Changes

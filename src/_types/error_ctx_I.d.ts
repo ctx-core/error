@@ -1,10 +1,11 @@
 export interface error_ctx_I {
-	type?:string;
-	key?:string;
+	data?:object;
+	error_message?:string;
 	http_error_message?:string;
 	http_status?:number;
-	error_message?:string;
+	key?:string;
 	stack?:string;
+	type?:string;
 	upstream_error?:error_ctx_I;
-	data?:object;
+	url?:string
 }
