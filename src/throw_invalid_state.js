@@ -1,4 +1,5 @@
 import { assign, clone, omit } from '@ctx-core/object'
+import { HttpError } from './throw_http_error.js'
 import { throw_error } from './throw_error.js'
 /** @type {import('./throw_invalid_state.d.ts').invalid_state_error_} */
 export const invalid_state_error_ = error_ctx=>new InvalidStateError(error_ctx)
@@ -12,7 +13,7 @@ export function throw_invalid_state(...error_ctx_a) {
 	throw_error(invalid_state_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_invalid_state.d.ts').InvalidStateError} */
-export class InvalidStateError extends Error {
+export class InvalidStateError extends HttpError {
 	constructor(error_ctx) {
 		super()
 		this.type = 'invalid_state'

@@ -1,18 +1,20 @@
 import { assign, clone } from '@ctx-core/object'
+import { HttpError } from './throw_http_error.js'
 import { throw_error } from './throw_error.js'
 /** @type {import('./throw_bad_gateway.d.ts').bad_gateway_error_} */
-export const bad_gateway_error_ = (error_ctx = {})=>new BadGatewayError(error_ctx)
+export const bad_gateway_error_ = (error_ctx = {})=>
+	new BadGatewayError(error_ctx)
 /**
  * Throws a bad_gateway error (HTTP 502)
  * @type {import('./throw_bad_gateway.d.ts').throw_bad_gateway}
  * @example
- * throw__bad_gateway(ctx) // Bad Gateway
+ * bad_gateway_throw(ctx) // Bad Gateway
  */
 export const throw_bad_gateway = (...error_ctx_a)=>{
 	throw_error(bad_gateway_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_bad_gateway.d.ts').BadGatewayError} */
-export class BadGatewayError extends Error {
+export class BadGatewayError extends HttpError {
 	constructor(error_ctx = {}) {
 		super()
 		this.type = 'bad_gateway'

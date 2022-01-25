@@ -1,5 +1,6 @@
 import { assign, clone, omit } from '@ctx-core/object'
 import { throw_error } from './throw_error.js'
+import { HttpError } from './throw_http_error.js'
 /** @type {import('./throw_invalid_argument.d.ts').invalid_argument_error_} */
 export const invalid_argument_error_ = error_ctx=>new InvalidArgumentError(error_ctx)
 /**
@@ -12,7 +13,7 @@ export function throw_invalid_argument(...error_ctx_a) {
 	throw_error(invalid_argument_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_invalid_argument.d.ts').InvalidArgumentError} */
-export class InvalidArgumentError extends Error {
+export class InvalidArgumentError extends HttpError {
 	constructor(error_ctx) {
 		super()
 		this.type = 'invalid_argument'

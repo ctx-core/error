@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.2.0
+
+### Minor Changes
+
+- feat: + throw_http_error,HttpError: base class for http errors
+
 ## 11.1.23
 
 ### Patch Changes

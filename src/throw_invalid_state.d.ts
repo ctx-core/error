@@ -1,4 +1,5 @@
 import type { error_ctx_I } from './_types'
+import type { HttpError } from './throw_http_error'
 /**
  * Throws a invalid_state error (HTTP 500)
  * @example
@@ -6,14 +7,10 @@ import type { error_ctx_I } from './_types'
  */
 export declare function throw_invalid_state(...error_ctx_a:InvalidStateError_I[]):void;
 export declare function invalid_state_error_(error_ctx:InvalidStateError_I):InvalidStateError;
-export declare class InvalidStateError extends Error implements InvalidStateError_I {
-	type:string
-	http_status:number
+export declare class InvalidStateError extends HttpError implements InvalidStateError_I {
 	key:string
 	reason:string
-	error_message:string
-	http_error_message:string
-	constructor(error_ctx:InvalidStateError_I);
+	constructor(error_ctx:InvalidStateError_I)
 }
 export interface InvalidStateError_I extends error_ctx_I {
 	key:string;

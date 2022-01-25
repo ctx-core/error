@@ -1,4 +1,5 @@
 import type { error_ctx_I } from './_types'
+import type { HttpError } from './throw_http_error'
 /**
  * Throws a invalid_argument error (HTTP 500)
  * @example
@@ -6,12 +7,8 @@ import type { error_ctx_I } from './_types'
  */
 export declare function throw_invalid_argument(...error_ctx_a:InvalidArgumentError_I[]):void;
 export declare function invalid_argument_error_(error_ctx:InvalidArgumentError_I):InvalidArgumentError;
-export declare class InvalidArgumentError extends Error implements InvalidArgumentError_I {
+export declare class InvalidArgumentError extends HttpError {
 	key:string
-	error_message:string
-	type:string
-	http_status:number
-	http_error_message:string
 	constructor(error_ctx:InvalidArgumentError_I);
 }
 export interface InvalidArgumentError_I extends error_ctx_I {

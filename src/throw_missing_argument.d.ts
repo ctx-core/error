@@ -1,4 +1,5 @@
 import type { error_ctx_I } from './_types'
+import type { HttpError } from './throw_http_error'
 /**
  * Throws a missing_argument error (HTTP 500)
  * @example
@@ -6,13 +7,9 @@ import type { error_ctx_I } from './_types'
  */
 export declare function throw_missing_argument(...error_ctx_a:error_ctx_I[]):void;
 export declare function missing_argument_error_(error_ctx:MissingArgumentError_I):MissingArgumentError;
-export declare class MissingArgumentError extends Error implements MissingArgumentError_I {
+export declare class MissingArgumentError extends HttpError implements MissingArgumentError_I {
 	key:string
-	error_message:string
-	type:string
-	http_status:number
-	http_error_message:string
-	constructor(error_ctx:MissingArgumentError_I);
+	constructor(error_ctx:MissingArgumentError_I)
 }
 export interface MissingArgumentError_I extends error_ctx_I {
 	key:string;

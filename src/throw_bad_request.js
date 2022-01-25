@@ -1,4 +1,5 @@
 import { assign, clone } from '@ctx-core/object'
+import { HttpError } from './throw_http_error.js'
 import { throw_error } from './throw_error.js'
 /** @type {import('./throw_bad_request.d.ts').bad_request_error_} */
 export const bad_request_error_ = (error_ctx = {})=>new BadRequestError(error_ctx)
@@ -12,7 +13,7 @@ export const throw_bad_request = (...error_ctx_a)=>{
 	throw_error(bad_request_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_bad_request.d.ts').BadRequestError} */
-export class BadRequestError extends Error {
+export class BadRequestError extends HttpError {
 	constructor(error_ctx) {
 		super()
 		this.type = 'bad_request'

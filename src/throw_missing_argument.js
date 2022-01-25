@@ -1,5 +1,6 @@
 import { assign, clone } from '@ctx-core/object'
 import { throw_error } from './throw_error.js'
+import { HttpError } from './throw_http_error.js'
 /** @type {import('./throw_missing_argument.d.ts').missing_argument_error_} */
 export const missing_argument_error_ = error_ctx=>new MissingArgumentError(error_ctx)
 /**
@@ -12,7 +13,7 @@ export function throw_missing_argument(...error_ctx_a) {
 	throw_error(missing_argument_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_missing_argument.d.ts').MissingArgumentError} */
-export class MissingArgumentError extends Error {
+export class MissingArgumentError extends HttpError {
 	constructor(error_ctx) {
 		super()
 		this.type = 'missing_argument'

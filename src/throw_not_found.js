@@ -1,4 +1,5 @@
 import { assign, clone } from '@ctx-core/object'
+import { HttpError } from './throw_http_error.js'
 import { throw_error } from './throw_error.js'
 /** @type {import('./throw_not_found.d.ts').not_found_error_} */
 export const not_found_error_ = (error_ctx = {})=>new NotFoundError(error_ctx)
@@ -12,7 +13,7 @@ export function throw_not_found(...error_ctx_a) {
 	throw_error(not_found_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./throw_not_found.d.ts').NotFoundError} */
-export class NotFoundError extends Error {
+export class NotFoundError extends HttpError {
 	constructor(error_ctx = {}) {
 		super()
 		this.type = 'not_found'
