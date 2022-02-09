@@ -10,6 +10,8 @@ export declare class HttpError extends Error implements error_ctx_I {
 	type?:string
 	url?:string
 	http_status?:number
+	error?:string
+	http_error?:string
 	error_message?:string
 	http_error_message?:string
 	constructor(error_ctx?:error_ctx_I)

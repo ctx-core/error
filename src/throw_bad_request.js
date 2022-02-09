@@ -18,8 +18,10 @@ export class BadRequestError extends HttpError {
 		super()
 		this.type = 'bad_request'
 		this.http_status = 400
+		this.error = this.type
+		this.http_error = this.type
 		this.error_message = 'Bad Request'
-		this.http_error_message = 'Bad Request'
+		this.http_error_message = this.error_message
 		assign(this, error_ctx)
 	}
 }

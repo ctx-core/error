@@ -18,6 +18,8 @@ export class InvalidArgumentError extends HttpError {
 		super()
 		this.type = 'invalid_argument'
 		this.http_status = 500
+		this.error = this.type
+		this.http_error = this.type
 		this.http_error_message = 'Error'
 		this.key = error_ctx.key
 		this.error_message = error_ctx.error_message || `${this.key} is invalid`

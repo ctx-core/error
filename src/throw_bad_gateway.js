@@ -19,8 +19,10 @@ export class BadGatewayError extends HttpError {
 		super()
 		this.type = 'bad_gateway'
 		this.http_status = 502
+		this.error = this.type
+		this.http_error = this.type
 		this.error_message = 'Bad Gateway'
-		this.http_error_message = 'Bad Gateway'
+		this.http_error_message = this.error_message
 		assign(this, error_ctx)
 	}
 }

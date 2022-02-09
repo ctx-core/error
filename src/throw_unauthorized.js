@@ -17,6 +17,8 @@ export class UnauthorizedError extends HttpError {
 	constructor(error_ctx = {}) {
 		super()
 		this.type = 'unauthorized'
+		this.error = this.type
+		this.http_error = this.type
 		this.error_message = 'Unauthorized'
 		this.http_status = 401
 		this.http_error_message = 'Unauthorized'

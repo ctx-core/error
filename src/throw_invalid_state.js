@@ -18,6 +18,8 @@ export class InvalidStateError extends HttpError {
 		super()
 		this.type = 'invalid_state'
 		this.http_status = 500
+		this.error = this.type
+		this.http_error = this.type
 		this.http_error_message = 'Error'
 		this.key = error_ctx.key
 		this.reason = error_ctx.reason || 'No reason given.'

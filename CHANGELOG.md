@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.4.0
+
+### Minor Changes
+
+- HttpError: + error?:string,http_error?:string
+
 ## 11.3.1
 
 ### Patch Changes

@@ -20,8 +20,10 @@ export class BadCredentialsError extends HttpError {
 		super()
 		this.type = 'bad_credentials'
 		this.http_status = 401
+		this.error = this.type
+		this.http_error = this.type
 		this.error_message = 'Unauthorized'
-		this.http_error_message = 'Unauthorized'
+		this.http_error_message = this.error_message
 		assign(this, error_ctx)
 	}
 }

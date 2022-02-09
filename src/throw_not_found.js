@@ -18,6 +18,8 @@ export class NotFoundError extends HttpError {
 		super()
 		this.type = 'not_found'
 		this.http_status = 404
+		this.error = this.type
+		this.http_error = this.type
 		this.error_message = 'Not Found'
 		this.http_error_message = 'Not Found'
 		assign(this, error_ctx)

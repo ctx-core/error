@@ -21,6 +21,8 @@ export class HttpError extends Error {
 	constructor(error_ctx = {}) {
 		super()
 		this.type = 'http_error'
+		this.error = this.type
+		this.http_error = this.type
 		assign(this, error_ctx)
 	}
 }
