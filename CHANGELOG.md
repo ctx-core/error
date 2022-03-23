@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.4.1
+
+### Patch Changes
+
+- update dependencies
+- Updated dependencies
+  - @ctx-core/object@22.1.3
+
 ## 11.4.0
 
 ### Minor Changes
