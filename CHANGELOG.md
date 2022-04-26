@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.4.5
+
+### Patch Changes
+
+- @ctx-core/function: 20.7.1
+- Updated dependencies
+  - @ctx-core/object@22.1.8
+
 ## 11.4.4
 
 ### Patch Changes
