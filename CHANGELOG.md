@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.4.4
+
+### Patch Changes
+
+- @ctx-core/array: 26.2.0
+- Updated dependencies
+  - @ctx-core/object@22.1.7
+
 ## 11.4.3
 
 ### Patch Changes
