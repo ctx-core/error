@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.4.6
+
+### Patch Changes
+
+- update dependencies
+
 ## 11.4.5
 
 ### Patch Changes
