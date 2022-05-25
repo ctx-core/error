@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.4.8
+
+### Patch Changes
+
+- @ctx-core/object: 22.2.0
+
 ## 11.4.7
 
 ### Patch Changes
