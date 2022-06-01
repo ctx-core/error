@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.5.0
+
+### Minor Changes
+
+- throw_error: no longer log error message
+
 ## 11.4.8
 
 ### Patch Changes
