@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.5.1
+
+### Patch Changes
+
+- tsx: ^3.8.2 -> ^3.9.0
+- Updated dependencies
+  - @ctx-core/object@22.2.7
+
 ## 11.5.0
 
 ### Minor Changes
