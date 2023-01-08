@@ -1,5 +1,12 @@
 # @ctx-core/error
 
+## 11.5.9
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/object@23.0.0
+
 ## 11.5.8
 
 ### Patch Changes
