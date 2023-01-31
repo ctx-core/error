@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.5.14
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+- Updated dependencies
+  - @ctx-core/object@24.1.1
+
 ## 11.5.13
 
 ### Patch Changes
