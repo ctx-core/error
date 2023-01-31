@@ -25,8 +25,7 @@
 		"rootDir": "src",
 		"outDir": "lib",
 		"declarationDir": "lib",
-		"lib": ["dom", "ESNext"],
-		"importsNotUsedAsValues": "error"
+		"lib": ["dom", "ESNext"]
 	},
 	"exclude": [
 		"node_modules",

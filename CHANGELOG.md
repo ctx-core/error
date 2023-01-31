@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.5.16
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+
 ## 11.5.15
 
 ### Patch Changes
