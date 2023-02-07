@@ -1,5 +1,12 @@
 # @ctx-core/error
 
+## 11.6.0
+
+### Minor Changes
+
+- error_o: extends Error
+- name convention updates
+
 ## 11.5.18
 
 ### Patch Changes
