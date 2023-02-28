@@ -4,8 +4,8 @@ import type { error_o_T } from '../_types'
  * @example
  * http_error_throw(ctx) // Unauthorized
  */
-export declare function http_error__throw(...error_ctx_a:error_o_T[]):void;
-export declare function http_error_(error_o?:error_o_T):HttpError;
+export declare function http_error__throw(...error_ctx_a:error_o_T[]):void
+export declare function http_error_(error_o?:error_o_T):HttpError
 export declare class HttpError extends Error implements error_o_T {
 	type?:string
 	url?:string

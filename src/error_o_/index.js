@@ -1,4 +1,4 @@
-import { clone } from '@ctx-core/object'
+import { assign } from '@ctx-core/object'
 /**
  * Assigns & coerces to ctx.ctx__error
  * @type {typeof import('./index.d.ts').error_o_}
@@ -11,7 +11,7 @@ export const error_o_ = error_ctx_or_error_message=>{
 			}
 		: error_ctx_or_error_message || {}
 	const error = new Error(error_ctx_or_error_message.error_message)
-	return clone(error, upstream_error, /** @type {Error} */{ upstream_error })
+	return assign(error, upstream_error, /** @type {Error} */{ upstream_error })
 }
 export {
 	error_o_ as error_ctx_,

@@ -1,17 +1,21 @@
 import { assign, clone } from '@ctx-core/object'
 import { error__throw } from '../error__throw/index.js'
-/** @type {typeof import('./index.d.ts').http_error_} */
-export const http_error_ = (
-	error_o = /** @type {import('../_types').error_o_T} */{}
-)=>new HttpError(error_o)
+/** @typedef {import('../_types').error_o_T}error_o_T */
+/**
+ * @param {error_o_T}[error_o]
+ * @returns {HttpError}
+ */
+export function http_error_(error_o) {
+  return new HttpError(error_o)
+}
 /**
  * Throws a Bad Credentials error (HTTP 401)
- * @type {import('./index.d.ts').http_error__throw}
+ * @param {error_o_T}error_ctx_a
  * @example
  * throw__http_error(ctx) // Unauthorized
  */
-export const http_error__throw = (...error_ctx_a)=>{
-	error__throw(http_error_(clone(...error_ctx_a)))
+export function http_error__throw(...error_ctx_a) {
+  error__throw(http_error_(clone(...error_ctx_a)))
 }
 /** @type {import('./index.d.ts').HttpError} */
 export class HttpError extends Error {
