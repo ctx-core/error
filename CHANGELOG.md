@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 11.6.11
+
+### Patch Changes
+
+- error**throw,http_error**throw: export function instead of export const
+- error\_\_throw: error_ctx_or_error_message=>error_o_or_error_message
+- error*o*: fix throw error_o: assign to Error instead of clone Error
+
 ## 11.6.10
 
 ### Patch Changes
