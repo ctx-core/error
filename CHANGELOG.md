@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 11.6.12
+
+### Patch Changes
+
+- jsdoc fixes
+
 ## 11.6.11
 
 ### Patch Changes

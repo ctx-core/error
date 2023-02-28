@@ -1,9 +1,14 @@
 import { assign, clone, omit } from '@ctx-core/object'
 import { error__throw } from '../error__throw/index.js'
 import { HttpError } from '../http_error__throw/index.js'
-/** @type {typeof import('./index.d.ts').invalid_argument_error_} */
-export const invalid_argument_error_ = error_o=>
-	new InvalidArgumentError(error_o)
+/** @typedef {import('../_types').error_o_T}error_o_T */
+/**
+ * @param {error_o_T}[error_o]
+ * @returns {InvalidArgumentError}
+ */
+export function invalid_argument_error_(error_o) {
+  return new InvalidArgumentError(error_o)
+}
 /**
  * Throws an invalid_argument error (HTTP 500)
  * @type {import('./index.d.ts').invalid_argument__throw}

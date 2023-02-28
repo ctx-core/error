@@ -2,7 +2,8 @@ import { assign, clone, omit } from '@ctx-core/object'
 import { error__throw } from '../error__throw/index.js'
 import { HttpError } from '../http_error__throw/index.js'
 /** @type {typeof import('./index.d.ts').invalid_state_error_} */
-export const invalid_state_error_ = error_o=>new InvalidStateError(error_o)
+export const invalid_state_error_ = error_o=>
+	new InvalidStateError(error_o)
 /**
  * Throws a invalid_state error (HTTP 500)
  * @type {import('./index.d.ts').invalid_state__throw}
