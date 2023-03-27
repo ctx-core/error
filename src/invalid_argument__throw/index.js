@@ -18,6 +18,10 @@ export function invalid_argument_error_(error_o) {
 export function invalid_argument__throw(...error_ctx_a) {
 	error__throw(invalid_argument_error_(clone(...error_ctx_a)))
 }
+export {
+	invalid_argument__throw as throw_invalid_argument,
+	invalid_argument__throw as throw__invalid_argument,
+}
 /** @type {import('./index.d.ts').InvalidArgumentError} */
 export class InvalidArgumentError extends HttpError {
 	constructor(error_o) {
@@ -31,8 +35,4 @@ export class InvalidArgumentError extends HttpError {
 		this.error_message = error_o.error_message || `${this.key} is invalid`
 		assign(this, omit(error_o, 'key', 'error_message'))
 	}
-}
-export {
-	invalid_argument__throw as throw_invalid_argument,
-	invalid_argument__throw as throw__invalid_argument,
 }

@@ -1,5 +1,17 @@
 # @ctx-core/error
 
+## 11.7.0
+
+### Minor Changes
+
+- - MissingArgumentError_T: aliased by MissingArgumentError_I
+- - InvalidArgumentError_T: aliased by InvalidArgumentError_I
+- - InvalidStateError_T: aliased by InvalidStateError_I
+
+### Patch Changes
+
+- http*error*: fix: js implementation jsdoc type errors
+
 ## 11.6.24
 
 ### Patch Changes

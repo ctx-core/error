@@ -13,6 +13,10 @@ export const missing_argument_error_ = error_o=>
 export function missing_argument__throw(...error_ctx_a) {
 	error__throw(missing_argument_error_(clone(...error_ctx_a)))
 }
+export {
+	missing_argument__throw as throw_missing_argument,
+	missing_argument__throw as throw__missing_argument,
+}
 /** @type {import('./missing_argument__throw.d.ts').MissingArgumentError} */
 export class MissingArgumentError extends HttpError {
 	constructor(error_o) {
@@ -26,8 +30,4 @@ export class MissingArgumentError extends HttpError {
 		this.error_message = error_o.error_message || `${error_o.key} is not defined - ${error_o.type || 'Unknown Type'}`
 		assign(this, error_o)
 	}
-}
-export {
-	missing_argument__throw as throw_missing_argument,
-	missing_argument__throw as throw__missing_argument,
 }

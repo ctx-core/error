@@ -13,6 +13,10 @@ export const unauthorized_error_ = (error_o = {})=>
 export function unauthorized__throw(...error_ctx_a) {
 	error__throw(unauthorized_error_(clone(...error_ctx_a)))
 }
+export {
+	unauthorized__throw as throw_unauthorized,
+	unauthorized__throw as throw__unauthorized,
+}
 /** @type {import('./index.d.ts').UnauthorizedError} */
 export class UnauthorizedError extends HttpError {
 	constructor(error_o = {}) {
@@ -25,8 +29,4 @@ export class UnauthorizedError extends HttpError {
 		this.http_error_message = 'Unauthorized'
 		assign(this, error_o)
 	}
-}
-export {
-	unauthorized__throw as throw_unauthorized,
-	unauthorized__throw as throw__unauthorized,
 }

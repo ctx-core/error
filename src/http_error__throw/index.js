@@ -8,7 +8,10 @@ import { error__throw } from '../error__throw/index.js'
  */
 export function http_error_(error_o) {
 	/** @type {import('./index.d.ts').HttpError} */
-  return new HttpError(error_o)
+	return new /** @type {any} */HttpError(error_o)
+}
+export {
+	http_error_ as http_error_error_,
 }
 /**
  * Throws a Bad Credentials error (HTTP 401)
@@ -17,7 +20,11 @@ export function http_error_(error_o) {
  * throw__http_error(ctx) // Unauthorized
  */
 export function http_error__throw(...error_ctx_a) {
-  error__throw(http_error_(clone(...error_ctx_a)))
+	error__throw(http_error_(clone(...error_ctx_a)))
+}
+export {
+	http_error__throw as throw_http_error,
+	http_error__throw as throw__http_error,
 }
 export class HttpError extends Error {
 	/**
@@ -30,9 +37,4 @@ export class HttpError extends Error {
 		this.http_error = this.type
 		assign(this, error_o)
 	}
-}
-export {
-	http_error_ as http_error_error_,
-	http_error__throw as throw_http_error,
-	http_error__throw as throw__http_error,
 }

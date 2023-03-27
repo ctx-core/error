@@ -13,6 +13,10 @@ export const bad_gateway_error_ = (error_o = {})=>
 export const bad_gateway__throw = (...error_ctx_a)=>{
 	error__throw(bad_gateway_error_(clone(...error_ctx_a)))
 }
+export {
+	bad_gateway__throw as throw_bad_gateway,
+	bad_gateway__throw as throw__bad_gateway,
+}
 /** @type {import('./index.d.ts').BadGatewayError} */
 export class BadGatewayError extends HttpError {
 	constructor(error_o = {}) {
@@ -25,8 +29,4 @@ export class BadGatewayError extends HttpError {
 		this.http_error_message = this.error_message
 		assign(this, error_o)
 	}
-}
-export {
-	bad_gateway__throw as throw_bad_gateway,
-	bad_gateway__throw as throw__bad_gateway,
 }

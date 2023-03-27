@@ -13,6 +13,10 @@ export const invalid_state_error_ = error_o=>
 export function invalid_state__throw(...error_ctx_a) {
 	error__throw(invalid_state_error_(clone(...error_ctx_a)))
 }
+export {
+	invalid_state__throw as throw_invalid_state,
+	invalid_state__throw as throw__invalid_state,
+}
 /** @type {import('./index.d.ts').InvalidStateError} */
 export class InvalidStateError extends HttpError {
 	constructor(error_o) {
@@ -27,8 +31,4 @@ export class InvalidStateError extends HttpError {
 		this.error_message = error_o.error_message || `${this.key} is in an invalid state. ${this.reason}`
 		assign(this, omit(error_o, 'key', 'reason', 'error_message'))
 	}
-}
-export {
-	invalid_state__throw as throw_invalid_state,
-	invalid_state__throw as throw__invalid_state,
 }

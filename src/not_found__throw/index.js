@@ -13,6 +13,10 @@ export const not_found_error_ = (error_o = {})=>
 export function not_found__throw(...error_ctx_a) {
 	error__throw(not_found_error_(clone(...error_ctx_a)))
 }
+export {
+	not_found__throw as throw_not_found,
+	not_found__throw as throw__not_found,
+}
 /** @type {import('./index.d.ts').NotFoundError} */
 export class NotFoundError extends HttpError {
 	constructor(error_o = {}) {
@@ -25,8 +29,4 @@ export class NotFoundError extends HttpError {
 		this.http_error_message = 'Not Found'
 		assign(this, error_o)
 	}
-}
-export {
-	not_found__throw as throw_not_found,
-	not_found__throw as throw__not_found,
 }
