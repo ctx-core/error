@@ -1,18 +1,18 @@
+/** @typedef {import('../_types').error_o_T}error_o_T */
 /**
  * Logs the given error_o to stderr
- * @type {typeof import('./index.d.ts').console__error}
+ * @param {error_o_T}error_o
  */
-export const console__error = error_o=>{
-	const out_error_message =
-		error_o.error_message
+export function console__error(error_o) {
+	const message =
+		error_o.message
 		|| error_o && error_o.toString()
-		|| 'error__throw: Unknown Error'
+		|| 'console__error|Unknown Error'
 	const stack = error_o && error_o.stack
 	console.error(`
 console__error
 ${stack}
-${out_error_message}
+${message}
 ${JSON.stringify(error_o)}
 	`.trim())
 }
-export { console__error as console_error }

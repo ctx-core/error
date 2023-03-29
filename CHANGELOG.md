@@ -1,5 +1,110 @@
 # @ctx-core/error
 
+## 12.0.0
+
+### Major Changes
+
+- InvalidArgumentError_T=>invalid_argument_error_o_T
+
+  - InvalidArgumentError_I
+  - throw_invalid_argument_ctx_T
+
+- HttpError constructor arguments: (message?:string):
+
+  HttpError
+  BadCredentialsError
+  BadGatewayError
+  BadRequestError
+  InvalidArgumentError
+  InvalidStateError
+  MissingArgumentError
+  NotFoundError
+  UnauthorizedError
+
+- - error*ctx\_\_log*,log_error_ctx,\_log_error_ctx,\_ctx**error**log
+- - error_ctx_I
+- - throw_invalid_argument,throw\_\_invalid_argument
+- - error*ctx*,\_error_ctx,\_ctx\_\_error
+- - console_error
+- - throw_missing_argument,throw\_\_missing_argument
+- - throw_bad_request,throw\_\_bad_request
+- InvalidStateError_T=>invalid_state_error_o_T:
+
+  key?:string
+  reason?:string
+
+  - InvalidStateError_I
+  - throw_invalid_state_ctx_type
+
+- arguments: (message?:string, invalid_state_error_o?:invalid_state_error_o_T):
+
+  invalid*state_error*
+  invalid_state\_\_throw
+
+- arguments: (message?:string, missing_argument_error_o?:missing_argument_error_o_T):
+
+  missing*argument_error*
+  missing_argument\_\_throw
+
+- _*error*,_\_\_throw: arguments: (message?:string, error_o?:error_o_T):
+
+  bad*gateway_error*
+  bad*gateway\_\_throw
+  bad_request_error*
+  bad*request\_\_throw
+  http_error*
+  http*error\_\_throw
+  missing_argument_error*
+  missing*argument\_\_throw
+  not_found_error*
+  not*found\_\_throw
+  unauthorized_error*
+  unauthorized\_\_throw
+
+- arguments: (message?:string, bad_credentials_error_o?:bad_credentials_error_o_T):
+
+  bad*credentials_error*
+  bad_credentials\_\_throw
+
+- - throw_unauthorized,throw\_\_unauthorized
+- - print_error,print\_\_error
+- error_o_T:
+
+  - error_message
+    http_error_message=>http**message
+    http_status=>http**status
+  - key
+  - stack
+  - type
+  - upstream_error
+
+- arguments: (message?:string, invalid_argument_error_o?:invalid_argument_error_o_T):
+
+  invalid*argument_error*
+  invalid_argument\_\_throw
+
+- MissingArgumentError_T=>missing_argument_error_o_T:
+
+  key?:string
+
+  - MissingArgumentError_I
+
+- - throw_http_error
+  - throw\_\_http_error
+- - throw_not_found,throw\_\_not_found
+- - throw_invalid_state,throw\_\_invalid_state
+- - throw_bad_credentials,throw\_\_bad_credentials
+- - throw_bad_gateway,throw\_\_bad_gateway
+
+### Minor Changes
+
+- - bad_credentials_error_o_T
+
+### Patch Changes
+
+- error\_\_print: update console.error message
+- console\_\_error: update console.error message
+
 ## 11.7.0
 
 ### Minor Changes

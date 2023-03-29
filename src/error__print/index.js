@@ -1,20 +1,18 @@
+/** @typedef {import('../_types').error_o_T}error_o_T */
 /**
  * Prints the given `error_o` to stderr
+ * @param {error_o_T}error_o
  * @type {typeof import('./index.d.ts').error__print}
  */
-export const error__print = error_o=>{
-	const { http_error_message = 'Error' } = error_o
-	const body = JSON.stringify({
-		error_message: http_error_message
-	})
+export function error__print(error_o) {
+	const {
+		http__message = 'Error',
+		message = 'Error'
+	} = error_o
 	console.error(`
-print__error|catch
+error__print|catch
 ${error_o}
-${body}
-${error_o.error_message}
+http__message: ${http__message}
+message: ${message}
 ${error_o.stack}`.trim())
-}
-export {
-	error__print as print_error,
-	error__print as print__error,
 }
