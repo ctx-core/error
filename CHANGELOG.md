@@ -1,5 +1,18 @@
 # @ctx-core/error
 
+## 12.3.0
+
+### Minor Changes
+
+- - not_found\_\_default\_\_message
+- - unauthorized\_\_default\_\_message
+- - bad_gateway\_\_default\_\_message
+- - invalid_argument\_\_default\_\_message
+- - missing_argument\_\_default\_\_message
+- - invalid_state\_\_default\_\_message
+- - bad_request\_\_default\_\_message
+- - bad_credentials\_\_default\_\_message
+
 ## 12.2.0
 
 ### Minor Changes

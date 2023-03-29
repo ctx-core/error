@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('./index.d.ts').argument__bad_credentials_error_o_T}argument__bad_credentials_error_o_T */
+export const bad_credentials__default__message = 'Unauthorized'
 /**
  * @param {string}[message]
  * @param {argument__bad_credentials_error_o_T}[bad_credentials_error_o]
@@ -11,7 +12,8 @@ export function bad_credentials_error_(
 	bad_credentials_error_o
 ) {
 	return assign(
-		new /** @type {any} */BadCredentialsError(message),
+		new /** @type {any} */BadCredentialsError(
+			message ?? bad_credentials__default__message),
 		bad_credentials_error_o)
 }
 /**
@@ -35,7 +37,7 @@ export class BadCredentialsError extends HttpError {
 	constructor(message) {
 		super(message)
 		this.name = 'BadCredentialsError'
-		this.http__message = 'Unauthorized'
+		this.http__message = bad_credentials__default__message
 		this.http__status = 401
 		if (!this.message) this.message = this.http__message
 	}

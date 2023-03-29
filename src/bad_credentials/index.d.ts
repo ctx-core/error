@@ -1,5 +1,6 @@
 import type { argument__error_o_T, error_o_error_T, error_o_T } from '../_types'
 import type { HttpError } from '../http_error'
+export declare const bad_credentials__default__message:string
 export declare function bad_credentials_error_(
 	message?:string,
 	bad_credentials_error_o?:argument__bad_credentials_error_o_T

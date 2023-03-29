@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('./index.d.ts').argument__invalid_state_error_o_T}argument__invalid_state_error_o_T */
+export const invalid_state__default__message = 'Error'
 /**
  * @param {string}[message]
  * @param {argument__invalid_state_error_o_T}[invalid_state_error_o]
@@ -12,7 +13,7 @@ export function invalid_state_error_(
 	invalid_state_error_o
 ) {
 	return assign(
-		new InvalidStateError(message),
+		new InvalidStateError(message ?? invalid_state__default__message),
 		invalid_state_error_o)
 }
 /**
@@ -37,7 +38,7 @@ export class InvalidStateError extends HttpError {
 		super(message)
 		this.name = 'InvalidStateError'
 		this.http__status = 500
-		this.http__message = 'Error'
+		this.http__message = invalid_state__default__message
 		if (!this.message) this.message = this.http__message
 	}
 }

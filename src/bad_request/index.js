@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
+export const bad_request__default__message = 'Bad Request'
 /**
  * @param {string}[message]
  * @param {argument__error_o_T}[error_o]
@@ -11,7 +12,10 @@ export function bad_request_error_(
 	message,
 	error_o
 ) {
-	return assign(new BadRequestError(message), error_o)
+	return assign(
+		new BadRequestError(
+			message ?? bad_request__default__message),
+		error_o)
 }
 /**
  * Throws a bad_request error (HTTP 400)
@@ -35,7 +39,7 @@ export class BadRequestError extends HttpError {
 		super(message)
 		this.name = 'BadRequestError'
 		this.http__status = 400
-		this.http__message = 'Bad Request'
+		this.http__message = bad_request__default__message
 		if (!this.message) this.message = this.http__message
 	}
 }

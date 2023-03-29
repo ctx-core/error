@@ -1,5 +1,6 @@
 import type { error_o_error_T, error_o_T } from '../_types'
 import type { HttpError } from '../http_error'
+export declare const unauthorized__default__message:string
 export declare function unauthorized_error_(
 	message?:string,
 	error_o?:error_o_T

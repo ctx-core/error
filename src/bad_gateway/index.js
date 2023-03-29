@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
+export const bad_gateway__default__message = 'Bad Gateway'
 /**
  * @param {string}[message]
  * @param {argument__error_o_T}[error_o]
@@ -12,7 +13,8 @@ export function bad_gateway_error_(
 	error_o
 ) {
 	return assign(
-		new /** @type {any} */BadGatewayError(message),
+		new /** @type {any} */BadGatewayError(
+			message ?? bad_gateway__default__message),
 		error_o)
 }
 /**
@@ -37,7 +39,7 @@ export class BadGatewayError extends HttpError {
 		super(message)
 		this.name = 'BadGatewayError'
 		this.http__status = 502
-		this.http__message = 'Bad Gateway'
+		this.http__message = bad_gateway__default__message
 		if (!this.message) this.message = this.http__message
 	}
 }

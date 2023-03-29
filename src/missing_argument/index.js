@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('./index.d.ts').argument__missing_argument_error_o_T}argument__missing_argument_error_o_T */
+export const missing_argument__default__message = 'Error'
 /**
  * @param {string}[message]
  * @param {argument__missing_argument_error_o_T}[missing_argument_error_o]
@@ -12,7 +13,7 @@ export function missing_argument_error_(
 	missing_argument_error_o
 ) {
 	return assign(
-		new MissingArgumentError(message),
+		new MissingArgumentError(message ?? missing_argument__default__message),
 		missing_argument_error_o)
 }
 /**
@@ -36,7 +37,7 @@ export class MissingArgumentError extends HttpError {
 	constructor(message) {
 		super(message)
 		this.name = 'MissingArgumentError'
-		this.http__message = 'Error'
+		this.http__message = missing_argument__default__message
 		this.http__status = 500
 		if (!this.message) this.message = this.http__message
 	}

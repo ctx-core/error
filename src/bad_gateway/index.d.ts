@@ -1,5 +1,6 @@
 import type { argument__error_o_T, error_o_error_T } from '../_types'
 import type { HttpError } from '../http_error'
+export declare const bad_gateway__default__message:string
 export declare function bad_gateway_error_(
 	message?:string,
 	error_o?:argument__error_o_T

@@ -1,6 +1,7 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
 /** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
+export const not_found__default__message = 'Not Found'
 /**
  * @param {string}[message]
  * @param {argument__error_o_T}[error_o]
@@ -11,7 +12,9 @@ export function not_found_error_(
 	message,
 	error_o
 ) {
-	return assign(new NotFoundError(message), error_o)
+	return assign(
+		new NotFoundError(message ?? not_found__default__message),
+		error_o)
 }
 /**
  * Throws a Not Found error (HTTP 401)
@@ -35,7 +38,7 @@ export class NotFoundError extends HttpError {
 		super(message)
 		this.name = 'NotFoundError'
 		this.http__status = 404
-		this.http__message = 'Not Found'
+		this.http__message = not_found__default__message
 		if (!this.message) this.message = this.http__message
 	}
 }
