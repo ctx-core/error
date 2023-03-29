@@ -15,7 +15,9 @@ export declare function bad_credentials__throw(
 ):void
 export declare class BadCredentialsError
 	extends HttpError
-	implements bad_credentials_error_o_error_T {}
+	implements bad_credentials_error_o_error_T {
+	jwt_token?:string
+}
 export interface bad_credentials_error_o_T extends error_o_T {
 	jwt_token?:string
 }

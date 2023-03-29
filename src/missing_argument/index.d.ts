@@ -15,7 +15,9 @@ export declare function missing_argument__throw(
 ):void
 export declare class MissingArgumentError
 	extends HttpError
-	implements missing_argument_error_o_error_T {}
+	implements missing_argument_error_o_error_T {
+	key?:string
+}
 export interface missing_argument_error_o_T extends error_o_T {
 	key?:string
 }

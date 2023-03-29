@@ -15,7 +15,9 @@ export declare function invalid_argument__throw(
 ):void
 export declare class InvalidArgumentError
 	extends HttpError
-	implements invalid_argument_error_o_error_T {}
+	implements invalid_argument_error_o_error_T {
+	key?:string
+}
 export interface invalid_argument_error_o_T extends error_o_T {
 	key?:string
 }

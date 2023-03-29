@@ -1,5 +1,16 @@
 # @ctx-core/error
 
+## 12.1.1
+
+### Patch Changes
+
+- \*Error classes: fix: include class props:
+
+  BadCredentialsError
+  HttpError
+  InvalidArgumentError
+  MissingArgumentError
+
 ## 12.1.0
 
 ### Minor Changes
