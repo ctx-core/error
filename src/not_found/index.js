@@ -1,9 +1,9 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
-/** @typedef {import('../_types').error_o_T}error_o_T */
+/** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
 /**
  * @param {string}[message]
- * @param {error_o_T}[error_o]
+ * @param {argument__error_o_T}[error_o]
  * @returns {NotFoundError}
  * @private
  */
@@ -16,7 +16,7 @@ export function not_found_error_(
 /**
  * Throws a Not Found error (HTTP 401)
  * @param {string}[message]
- * @param {error_o_T}[error_o]
+ * @param {argument__error_o_T}[error_o]
  * @example
  * not_found__throw(error_o) // Not Found
  */

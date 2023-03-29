@@ -1,9 +1,9 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
-/** @typedef {import('./index.d.ts').invalid_argument_error_o_T}invalid_argument_error_o_T */
+/** @typedef {import('./index.d.ts').argument__invalid_argument_error_o_T}argument__invalid_argument_error_o_T */
 /**
  * @param {string}[message]
- * @param {invalid_argument_error_o_T}[invalid_argument_error_o]
+ * @param {argument__invalid_argument_error_o_T}[invalid_argument_error_o]
  * @returns {InvalidArgumentError}
  */
 export function invalid_argument_error_(
@@ -15,7 +15,7 @@ export function invalid_argument_error_(
 /**
  * Throws an invalid_argument error (HTTP 500)
  * @param {string}[message]
- * @param {invalid_argument_error_o_T}[invalid_argument_error_o]
+ * @param {argument__invalid_argument_error_o_T}[invalid_argument_error_o]
  * @example
  * invalid_argument__throw('key: foobar')
  */

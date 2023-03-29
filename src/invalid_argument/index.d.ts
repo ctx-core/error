@@ -1,4 +1,4 @@
-import type { error_o_T } from '../_types'
+import type { argument__error_o_T, error_o_error_T, error_o_T } from '../_types'
 import type { HttpError } from '../http_error'
 export declare function invalid_argument_error_(
 	message?:string,
@@ -13,7 +13,13 @@ export declare function invalid_argument__throw(
 	message?:string,
 	invalid_argument_error_o?:invalid_argument_error_o_T
 ):void
-export declare class InvalidArgumentError extends HttpError {}
+export declare class InvalidArgumentError
+	extends HttpError
+	implements invalid_argument_error_o_error_T {}
 export interface invalid_argument_error_o_T extends error_o_T {
 	key?:string
 }
+export interface argument__invalid_argument_error_o_T
+	extends invalid_argument_error_o_T, argument__error_o_T {}
+export interface invalid_argument_error_o_error_T
+	extends invalid_argument_error_o_T, error_o_error_T {}

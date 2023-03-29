@@ -1,10 +1,9 @@
-import { assign, clone, omit } from '@ctx-core/object'
-import { error_o__throw } from '../error_o/index.js'
+import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
-/** @typedef {import('./index.d.ts').invalid_state_error_o_T}invalid_state_error_o_T */
+/** @typedef {import('./index.d.ts').argument__invalid_state_error_o_T}argument__invalid_state_error_o_T */
 /**
  * @param {string}[message]
- * @param {invalid_state_error_o_T}[invalid_state_error_o]
+ * @param {argument__invalid_state_error_o_T}[invalid_state_error_o]
  * @return {InvalidStateError}
  * @private
  */
@@ -12,12 +11,12 @@ export function invalid_state_error_(
 	message,
 	invalid_state_error_o
 ) {
-  return assign(new InvalidStateError(message), invalid_state_error_o)
+	return assign(new InvalidStateError(message), invalid_state_error_o)
 }
 /**
  * Throws an invalid_state error (HTTP 500)
  * @param {string}[message]
- * @param {invalid_state_error_o_T}[invalid_state_error_o]
+ * @param {argument__invalid_state_error_o_T}[invalid_state_error_o]
  * @example
  * invalid_state__throw('foobar: invalid type')
  */

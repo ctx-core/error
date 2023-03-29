@@ -1,5 +1,27 @@
 # @ctx-core/error
 
+## 12.1.0
+
+### Minor Changes
+
+- - argument\_\_error_o_T,error_o_error_T
+- MissingArgumentError: implements missing_argument_error_o_error_T
+- BadCredentialsError: implements bad_credentials_error_o_error_T
+- InvalidStateError: implements invalid_state_error_o_error_T
+- - argument\_\_bad_credentials_error_o_T,bad_credentials_error_o_error_T
+- \*Error class: implements error_o_error_T:
+
+  BadGatewayError
+  BadRequestError
+  HttpError
+  NotFoundError
+  UnauthorizedError
+
+- - argument\_\_missing_argument_error_o_T,missing_argument_error_o_error_T
+- - argument\_\_invalid_state_error_o_T,invalid_state_error_o_error_T
+- InvalidArgumentError: implements invalid_argument_error_o_error_T
+- - argument\_\_invalid_argument_error_o_T,invalid_argument_error_o_error_T
+
 ## 12.0.0
 
 ### Major Changes

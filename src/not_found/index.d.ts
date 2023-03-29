@@ -1,4 +1,4 @@
-import type { error_o_T } from '../_types'
+import type { error_o_error_T, error_o_T } from '../_types'
 import type { HttpError } from '../http_error'
 export declare function not_found_error_(
 	message?:string,
@@ -13,4 +13,6 @@ export declare function not_found__throw(
 	message?:string,
 	error_o?:error_o_T
 ):void
-export declare class NotFoundError extends HttpError {}
+export declare class NotFoundError
+	extends HttpError
+	implements error_o_error_T {}

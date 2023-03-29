@@ -1,9 +1,9 @@
 import { assign } from '@ctx-core/object'
 import { HttpError } from '../http_error/index.js'
-/** @typedef {import('../_types').error_o_T}error_o_T */
+/** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
 /**
  * @param {string}[message]
- * @param {error_o_T}[error_o]
+ * @param {argument__error_o_T}[error_o]
  * @returns {UnauthorizedError}
  * @private
  */
@@ -16,7 +16,7 @@ export function unauthorized_error_(
 /**
  * Throws an unauthorized error (HTTP 401)
  * @param {string}[message]
- * @param {error_o_T}[error_o]
+ * @param {argument__error_o_T}[error_o]
  * @example
  * unauthorized_throw(ctx) // Unauthorized
  */

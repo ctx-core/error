@@ -1,9 +1,9 @@
 import { assign } from '@ctx-core/object'
-/** @typedef {import('../_types').error_o_T}error_o_T */
+/** @typedef {import('../_types').argument__error_o_T}argument__error_o_T */
 /** @typedef {import('./index.d.ts').HttpError}HttpError */
 /**
  * @param {string}[message]
- * @param {error_o_T}[error_o]
+ * @param {argument__error_o_T}[error_o]
  * @returns {HttpError}
  */
 export function http_error_(message, error_o) {
@@ -12,7 +12,7 @@ export function http_error_(message, error_o) {
 /**
  * HttpError
  * @param {string}[message]
- * @param {error_o_T}error_o
+ * @param {argument__error_o_T}error_o
  * @example
  * http_error__throw(ctx) // Unauthorized
  */
