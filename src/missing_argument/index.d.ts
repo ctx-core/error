@@ -20,6 +20,7 @@ export declare class MissingArgumentError
 }
 export interface missing_argument_error_o_T extends error_o_T {
 	key?:string
+	type?:string
 }
 export interface argument__missing_argument_error_o_T
 	extends missing_argument_error_o_T, argument__error_o_T {}

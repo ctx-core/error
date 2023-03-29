@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 12.2.0
+
+### Minor Changes
+
+- missing_argument_error_o_T:
+
+  - type?:string
+
 ## 12.1.2
 
 ### Patch Changes
