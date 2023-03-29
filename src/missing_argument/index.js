@@ -11,7 +11,9 @@ export function missing_argument_error_(
 	message,
 	missing_argument_error_o
 ) {
-	return assign(new MissingArgumentError(message), missing_argument_error_o)
+	return assign(
+		new MissingArgumentError(message),
+		missing_argument_error_o)
 }
 /**
  * Throws a missing_argument error (HTTP 500)

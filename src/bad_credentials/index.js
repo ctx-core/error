@@ -10,7 +10,9 @@ export function bad_credentials_error_(
 	message,
 	bad_credentials_error_o
 ) {
-	return assign(new BadCredentialsError(message), bad_credentials_error_o)
+	return assign(
+		new /** @type {any} */BadCredentialsError(message),
+		bad_credentials_error_o)
 }
 /**
  * Throws a Bad Credentials error (HTTP 401)

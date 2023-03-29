@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 12.1.2
+
+### Patch Changes
+
+- fix: types is \*.js files
+
 ## 12.1.1
 
 ### Patch Changes

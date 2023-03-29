@@ -11,7 +11,9 @@ export function invalid_state_error_(
 	message,
 	invalid_state_error_o
 ) {
-	return assign(new InvalidStateError(message), invalid_state_error_o)
+	return assign(
+		new InvalidStateError(message),
+		invalid_state_error_o)
 }
 /**
  * Throws an invalid_state error (HTTP 500)

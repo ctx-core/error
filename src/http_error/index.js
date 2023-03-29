@@ -7,7 +7,9 @@ import { assign } from '@ctx-core/object'
  * @returns {HttpError}
  */
 export function http_error_(message, error_o) {
-	return assign(new /** @type {any} */HttpError(message), error_o)
+	return assign(
+		new /** @type {any} */HttpError(message),
+		error_o)
 }
 /**
  * HttpError

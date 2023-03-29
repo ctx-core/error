@@ -11,7 +11,9 @@ export function bad_gateway_error_(
 	message,
 	error_o
 ) {
-	return assign(new BadGatewayError(message), error_o)
+	return assign(
+		new /** @type {any} */BadGatewayError(message),
+		error_o)
 }
 /**
  * Throws a bad_gateway error (HTTP 502)

@@ -10,7 +10,9 @@ export function invalid_argument_error_(
 	message,
 	invalid_argument_error_o
 ) {
-	return assign(new InvalidArgumentError(message), invalid_argument_error_o)
+	return assign(
+		new InvalidArgumentError(message),
+		invalid_argument_error_o)
 }
 /**
  * Throws an invalid_argument error (HTTP 500)
