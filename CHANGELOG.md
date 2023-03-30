@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 12.3.1
+
+### Patch Changes
+
+- @ctx-core/object: ^27.3.1 -> ^27.3.2
+- Updated dependencies
+  - @ctx-core/object@27.3.3
+
 ## 12.3.0
 
 ### Minor Changes
