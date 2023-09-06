@@ -1,5 +1,13 @@
 # @ctx-core/error
 
+## 12.3.42
+
+### Patch Changes
+
+- version bump
+- Updated dependencies
+  - @ctx-core/object@28.0.7
+
 ## 12.3.41
 
 ### Patch Changes
