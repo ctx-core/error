@@ -1,5 +1,12 @@
 # @ctx-core/error
 
+## 12.3.49
+
+### Patch Changes
+
+- Updated dependencies
+  - @ctx-core/object@30.0.0
+
 ## 12.3.48
 
 ### Patch Changes
