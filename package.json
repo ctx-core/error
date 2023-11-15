@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/error",
-	"version": "12.4.3",
+	"version": "12.4.4",
 	"description": "ctx-core error",
 	"keywords": [
 		"ctx-core",
@@ -32,7 +32,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"ctx-core": "^2.2.2"
+		"ctx-core": "^2.3.0"
 	},
 	"devDependencies": {
 		"c8": "^8.0.1",
