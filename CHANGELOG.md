@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 12.4.15
+
+### Patch Changes
+
+- ctx-core: ^3.3.3 -> ^3.4.0
+
 ## 12.4.14
 
 ### Patch Changes
