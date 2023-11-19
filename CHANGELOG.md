@@ -1,5 +1,17 @@
 # @ctx-core/error
 
+## 12.4.16
+
+### Patch Changes
+
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@4.0.0
+
 ## 12.4.15
 
 ### Patch Changes
