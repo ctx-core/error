@@ -1,5 +1,11 @@
 # @ctx-core/error
 
+## 12.4.24
+
+### Patch Changes
+
+- tsx: ^4.3.0 -> ^4.4.0
+
 ## 12.4.23
 
 ### Patch Changes
