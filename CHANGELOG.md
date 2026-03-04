@@ -1,5 +1,26 @@
 # @ctx-core/error
 
+## 12.4.205
+
+### Patch Changes
+
+- c8: ^10.1.3 -> ^11.0.0
+- check-dts: ^0.8.2 -> ^0.9.0
+- tsx: ^4.20.6 -> ^4.21.0
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+- Updated dependencies
+  - ctx-core@7.2.33
+
 ## 12.4.204
 
 ### Patch Changes
@@ -1623,7 +1644,6 @@
 ### Minor Changes
 
 - missing_argument_error_o_T:
-
   - type?:string
 
 ## 12.1.2
@@ -1670,7 +1690,6 @@
 ### Major Changes
 
 - InvalidArgumentError_T=>invalid_argument_error_o_T
-
   - InvalidArgumentError_I
   - throw_invalid_argument_ctx_T
 
@@ -1697,7 +1716,6 @@
 
   key?:string
   reason?:string
-
   - InvalidStateError_I
   - throw_invalid_state_ctx_type
 
@@ -1734,7 +1752,6 @@
 - - throw_unauthorized,throw\_\_unauthorized
 - - print_error,print\_\_error
 - error_o_T:
-
   - error_message
     http_error_message=>http**message
     http_status=>http**status
@@ -1751,7 +1768,6 @@
 - MissingArgumentError_T=>missing_argument_error_o_T:
 
   key?:string
-
   - MissingArgumentError_I
 
 - - throw_http_error
